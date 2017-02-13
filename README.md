@@ -2,7 +2,7 @@
 Version: 0.1.14
 ## Short description
 metabomatching identifies metabolites using genetic spiking.
-### Description
+## Description
 metabomatching identifies metabolites using genetic spiking.
 ## Key features
 - metabolite identification
