@@ -19,7 +19,7 @@ ENV TOOL_VERSION=0.1.15
 ENV CONTAINER_VERSION=0.2.1.5
 
 # Install metabomatching
-RUN git clone -b release/${TOOL_VERSION} https://github.com/phnmnl/metabomatching-pre.git /mm-tp/
+RUN git clone -b release/${TOOL_VERSION} https://github.com/rrueedi/metabomatching-pre.git /mm-tp/
 RUN cp -r /mm-tp/fos /usr/share/fonts/truetype/
 RUN fc-cache -f -v
 
