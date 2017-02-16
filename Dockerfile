@@ -15,8 +15,9 @@ RUN apt-get install -y \
 # Clean up
 RUN apt-get -y clean && apt-get -y autoremove && rm -rf /var/lib/{cache,log}/ /tmp/* /var/tmp/*
 
-ENV TOOL_VERSION=0.1.15
-ENV CONTAINER_VERSION=0.2.1.5
+LABEL software.version="0.1.16"
+LABEL version="0.1"
+LABEL software="metabomatching-pre"
 
 # Install metabomatching
 RUN git clone -b release/${TOOL_VERSION} https://github.com/rrueedi/metabomatching-pre.git /mm-tp/
