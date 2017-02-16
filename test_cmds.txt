@@ -1,1 +1,2 @@
 which octave-cli
+which metabomatching.sh
