@@ -16,6 +16,41 @@
          <data name="Parameters" format="tsv" from_work_dir="parameters.out.tsv" label="metabomatching options"/>
          <data name="Figure" format="svg" from_work_dir="output.svg" label="metabomatching SVG"/>
      </outputs>
-     <help>
+     <help><![CDATA[
+		 .. class:: infomark
+		 
+		 **Authors**
+		 
+		| **Rico Rueedi (metabomatching@unil.ch)
+		
+		-----------
+		Description
+		-----------
+		metabomatching identifies metabolites using genetic spiking. A basic description is provided below, full documentation here https://github.com/rrueedi/metabomatching-pre/blob/master/documentation/howto.pdf
+
+		-----------
+		Input Files
+		-----------
+		 
+		Association Statistics Dataset (Pseudospectra)
+			| This (1+3K)-column tab-separated file contains the association statistics (effect size, standard error, and p-value) for the K variables on which metabomatching is to be run
+			|
+			
+		Parameters
+			| This two-column tab-separated file controls both the way metabomatching is run and the way results are displayed.
+			|
+			
+		------------
+		Output Files
+		------------
+		 
+		Scores
+			| This (3+K)-column tab-separated file contains the metabomatching scores for the K provided pseudospectra,  with one row for each reference metabolite
+			|
+			
+		Figure (PDF)
+			| The results, presented as a K page PDF file.
+			|
+		 ]]>
      </help>
  </tool>
