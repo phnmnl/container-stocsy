@@ -13,10 +13,10 @@ RUN apt-get update && \
 	apt-get -y autoremove && \
 	rm -rf /var/lib/{cache,log}/ /tmp/* /var/tmp/*
 
-LABEL software.version="0.1.17"
+LABEL software.version="0.1.18"
 LABEL version="0.2"
 LABEL software="metabomatching-pre"
-ENV TOOL_VERSION=0.1.17
+ENV TOOL_VERSION=0.1.18
 ENV CONTAINER_VERSION=0.2.1.6
 
 # Install metabomatching
