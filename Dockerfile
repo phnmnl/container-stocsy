@@ -14,10 +14,10 @@ RUN apt-get update && \
 	rm -rf /var/lib/{cache,log}/ /tmp/* /var/tmp/*
 
 LABEL software.version="0.1.0"
-LABEL version="0.3.0"
+LABEL version="0.3"
 LABEL software="metabomatching"
 ENV TOOL_VERSION=0.1.0
-ENV CONTAINER_VERSION=0.3.0
+ENV CONTAINER_VERSION=0.3
 
 # Install metabomatching
 RUN git clone -b release/${TOOL_VERSION} https://github.com/rrueedi/metabomatching.git /mm-tp/
