@@ -1,4 +1,4 @@
-<tool id="metabomatching-nmr" name="metabomatching">
+<tool id="metabomatching" name="metabomatching">
      <description>metabomatching</description>
      <requirements>
        <container type="docker">docker-registry.phenomenal-h2020.eu/phnmnl/metabomatching</container>
