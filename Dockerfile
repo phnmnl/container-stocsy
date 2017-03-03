@@ -18,6 +18,7 @@ LABEL version="0.3"
 LABEL software="metabomatching"
 ENV TOOL_VERSION=0.1.0
 ENV CONTAINER_VERSION=0.3
+ENV TRIGGER_JENKINS=1
 
 # Install metabomatching
 RUN git clone -b release/${TOOL_VERSION} https://github.com/rrueedi/metabomatching.git /mm-tp/
