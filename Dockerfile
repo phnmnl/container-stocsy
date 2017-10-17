@@ -13,10 +13,10 @@ RUN apt-get update && \
 	apt-get -y autoremove && \
 	rm -rf /var/lib/{cache,log}/ /tmp/* /var/tmp/*
 
-LABEL software.version="0.1.0"
+LABEL software.version="0.1.1"
 LABEL version="0.3"
 LABEL software="metabomatching"
-ENV TOOL_VERSION=0.1.0
+ENV TOOL_VERSION=0.1.1
 ENV CONTAINER_VERSION=0.3
 ENV TRIGGER_JENKINS=1
 
