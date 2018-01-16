@@ -23,7 +23,7 @@ metabomatching identifies metabolites using genetic spiking.
 
 ## Screenshots
 Sample metabomatching figure.
-[screenshot](screenshots/test.png)
+![screenshot](screenshots/test.png)
 
 ## Tool Authors
 - Rico Rueedi (University of Lausanne)
