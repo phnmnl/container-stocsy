@@ -258,7 +258,7 @@ assignment:
 - docker_image_override: metabomatching
   docker_owner_override: phnmnl
   docker_repo_override: container-registry.phenomenal-h2020.eu
-  docker_tag_override: dev_v0.1.3_cv0.3.40
+  docker_tag_override: v0.1.4_cv0.3.1.42
   max_pod_retrials: 3
   tools_id:
   - metabomatching
