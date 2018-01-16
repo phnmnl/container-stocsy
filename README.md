@@ -22,12 +22,8 @@ metabomatching identifies metabolites using genetic spiking.
 - NMR / 1H NMR
 
 ## Screenshots
-<<<<<<< HEAD
-
 Sample metabomatching figure.
-=======
-![screenshot](screenshots/test.png)
->>>>>>> develop
+[screenshot](screenshots/test.png)
 
 ## Tool Authors
 - Rico Rueedi (University of Lausanne)
