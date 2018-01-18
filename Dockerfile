@@ -16,7 +16,6 @@ RUN apt-get update && \
 LABEL software.version="0.1.5"
 LABEL version="0.3.2"
 LABEL software="metabomatching"
-
 ENV TOOL_VERSION=0.1.5
 ENV CONTAINER_VERSION=0.3.2
 ENV TRIGGER_JENKINS=1
