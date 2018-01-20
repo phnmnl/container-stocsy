@@ -13,17 +13,17 @@ RUN apt-get update && \
 	apt-get -y autoremove && \
 	rm -rf /var/lib/{cache,log}/ /tmp/* /var/tmp/*
 
-LABEL software.version="0.1.8"
+LABEL software.version="0.1.9"
 LABEL version="0.3.2"
 LABEL software="metabomatching"
 
-ENV TOOL_VERSION=0.1.8
+ENV TOOL_VERSION=0.1.9
 ENV CONTAINER_VERSION=0.3.2
 ENV TRIGGER_JENKINS=1
 
 # Install metabomatching
-# RUN git clone -b release/${TOOL_VERSION} https://github.com/rrueedi/metabomatching.git /mm-tp/
-RUN git clone https://github.com/rrueedi/metabomatching.git /mm-tp/
+RUN git clone -b release/${TOOL_VERSION} https://github.com/rrueedi/metabomatching.git /mm-tp/
+# RUN git clone https://github.com/rrueedi/metabomatching.git /mm-tp/
 RUN cp -r /mm-tp/fos /usr/share/fonts/truetype/
 RUN fc-cache -f -v
 
