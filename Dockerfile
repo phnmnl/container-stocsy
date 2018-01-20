@@ -21,7 +21,8 @@ ENV CONTAINER_VERSION=0.3.2
 ENV TRIGGER_JENKINS=1
 
 # Install metabomatching
-RUN git clone -b release/${TOOL_VERSION} https://github.com/rrueedi/metabomatching.git /mm-tp/
+# RUN git clone -b release/${TOOL_VERSION} https://github.com/rrueedi/metabomatching.git /mm-tp/
+RUN git clone https://github.com/rrueedi/metabomatching.git /mm-tp/
 RUN cp -r /mm-tp/fos /usr/share/fonts/truetype/
 RUN fc-cache -f -v
 
