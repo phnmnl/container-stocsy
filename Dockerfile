@@ -22,6 +22,6 @@ ENV TRIGGER_JENKINS=1
 RUN git clone -b develop https://github.com/rrueedi/stocsy.git /mm-tp/
 
 ENV PATH=$PATH:/mm-tp
-
+WORKDIR /mm-tp
 # Uncomment the entrypoint in order to use the tool with Galaxy
 ENTRYPOINT ["octave-cli", "/mm-tp/stocsy.m"]
