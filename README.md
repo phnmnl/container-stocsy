@@ -1,11 +1,11 @@
-# metabomatching
+# STOCSY
 Version: 0.1.0
 
 ## Short description
-metabomatching identifies metabolites using genetic spiking.
+STOCSY.
 
 ## Description
-metabomatching identifies metabolites using genetic spiking.
+STOCSY.
 
 ## Key features
 - metabolite identification
@@ -21,23 +21,17 @@ metabomatching identifies metabolites using genetic spiking.
 ## Instrument Data Types
 - NMR / 1H NMR
 
-## Screenshots
-![screenshot](screenshots/test.png)
-
 ## Tool Authors
-- Rico Rueedi (University of Lausanne)
+- N/A, it's correlation
 
 ## Container Contributors
 - Rico Rueedi (University of Lausanne)
 
-## Website
-- http://www.unil.ch/cbg/index.php?title=metabomatching
-
 ## Git Repository
-- https://github.com/phnmnl/container-metabomatching
+- https://github.com/phnmnl/container-stocsy
 
 ## Installation
-metabomatching is present on all PhenoMeNal Galaxy instances on deployed Cloud Research Environments, under the NMR category in the tool bar to the left of the screen. No installation is needed hence on PhenoMeNal Cloud Research Environments.
+STOCSY is present on all PhenoMeNal Galaxy instances on deployed Cloud Research Environments, under the NMR category in the tool bar to the left of the screen. No installation is needed hence on PhenoMeNal Cloud Research Environments.
 
 ## Usage Instructions
-On a PhenoMeNal Cloud Research Environment Galaxy environment, go to NMR category, then click on metabomatching. Provide the association statistics dataset (the pseudospectra) and parameters as .tsv files, then run. More detailed instructions figure on the tool page.
+TBD.
