@@ -23,5 +23,6 @@ RUN git clone -b develop https://github.com/rrueedi/stocsy.git /mm-tp/
 
 ENV PATH=$PATH:/mm-tp
 
+RUN octave-cli
 # Uncomment the entrypoint in order to use the tool with Galaxy
-ENTRYPOINT ["stocsy.sh"]
+ENTRYPOINT [/mm-tp/stocsy.m]
