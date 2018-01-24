@@ -1,0 +1,44 @@
+<tool id="stocsy" name="stocsy">
+     <description>stocsy</description>
+     <requirements>
+       <container type="docker">docker-registry.phenomenal-h2020.eu/phnmnl/stocsy</container>
+     </requirements>
+     <command>
+       <![CDATA[stocsy.sh -i "$metabolome" -x "$index" -o "$stocsy"]]>
+     </command>
+     <inputs>
+         <param name="metabolome" type="data" format="csv" label="Metabolome"/>
+         <param name="index" type="data" format="csv" label="Index"/>
+     </inputs>
+     <outputs>
+         <data name="stocsy" format="csv" from_work_dir="stocsy.csv" label="STOCSY"/>
+     </outputs>
+     <help>
+-----------
+Description
+-----------
+
+STOCSY uses feature-feature correlation to aid metabolite identification.
+
+-----------
+Input Files 
+-----------
+	
+Metabolome
+	| This (1+3K)-column comma-separated file contains the association statistics (effect size, standard error, and p-value) for the K variables on which stocsy is to be run
+	| 
+
+Index
+	| This comma-separated file contaiins the feature for which the correlation is output.
+	|
+
+------------
+Output Files
+------------
+	
+STOCSY
+	| This (NI)-column comma-separated file contains the correlations between features referenced by index, and all other features.
+	|
+
+	</help>
+ </tool>
