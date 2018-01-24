@@ -179,7 +179,15 @@
       <param id="docker_repo_override">container-registry.phenomenal-h2020.eu</param>
       <param id="docker_owner_override">phnmnl</param>
       <param id="docker_image_override">metabomatching</param>
-      <param id="docker_tag_override">dev_v0.1.3_cv0.3.40</param>
+      <param id="docker_tag_override">v0.1.0_cv0.3.29</param>
+      <param id="max_pod_retrials">3</param>
+      <param id="docker_enabled">true</param>
+    </destination>
+	<destination id="stocsy-container" runner="k8s">
+      <param id="docker_repo_override">container-registry.phenomenal-h2020.eu</param>
+      <param id="docker_owner_override">phnmnl</param>
+      <param id="docker_image_override">stocsy</param>
+      <param id="docker_tag_override">latest</param>
       <param id="max_pod_retrials">3</param>
       <param id="docker_enabled">true</param>
     </destination>
@@ -294,13 +302,17 @@
          a tag, a handler or destination that matches that tag will be
          chosen at random.  -->
     <tool id="pathway_enrichment" destination="dynamic-k8s-large" resources="all"/>
+
+    <!-- Uppsala demo tools
     <tool id="BatchFeatureRemoval" destination="batchfeature-container"/>
     <tool id="upps_blankfilter" destination="blankfilter-container"/>
-    <tool id="log2transformation" destination="log2transformation-container"/>
+    <tool id="log2transformation" destination="log2transformation-container"/> -->
+    
     <!-- Fluxomics -->
     <tool id="iso2flux" destination="dynamic-k8s-small" resources="all"/>     
     <tool id="midcor" destination="dynamic-k8s-small" resources="all"/>
     <tool id="ramid" destination="dynamic-k8s-tiny" resources="all"/>
+    <tool id="cdf2mid" destination="dynamic-k8s-tiny" resources="all"/>
     <tool id="isodyn" destination="isodyn-container"/>
     <tool id="escher-fluxomics" destination="dynamic-k8s-tiny" resources="all"/>
     <!-- ICL -->
@@ -313,6 +325,11 @@
     <tool id="Multivariate" destination="dynamic-k8s-small" resources="all"/>
     <tool id="Biosigner" destination="dynamic-k8s-medium" resources="all"/>
     <tool id="lcmsmatching" destination="dynamic-k8s-small" resources="all"/>
+    <tool id="Transformation" destination="dynamic-k8s-small" resources="all"/>
+    <tool id="quality_metrics" destination="dynamic-k8s-small" resources="all"/>
+    <tool id="generic_filter" destination="dynamic-k8s-small" resources="all"/>
+    <tool id="Batch_correction" destination="dynamic-k8s-small" resources="all"/>
+    <tool id="normalization" destination="dynamic-k8s-small" resources="all"/>
     <tool id="msconvert2" destination="msconvert2-container"/>
     <!-- new NMR -->
     <tool id="metabolab" destination="dynamic-k8s-large" resources="all"/>
@@ -333,8 +350,9 @@
     <tool id="mtbls-labs-uploader" destination="mtbls-labs-uploader-container"/>
     <tool id="metfragcli" destination="metfrag-cli-container"/>
     <tool id="Metabolite_ID_Converter" destination="container-metaboliteidconverter" />
-    <tool id="metabomatching" destination="dynamic-k8s-small" resources="all"/>
-    <tool id="ms-vfetc" destination="leidenuniv-ms-vfetc-container"/>
+    <tool id="metabomatching" destination="metabomatching-container"/>
+    <tool id="stocsy" destination="stocsy-container"/>
+	<tool id="ms-vfetc" destination="leidenuniv-ms-vfetc-container"/>
     <!-- new XCMS -->
     <tool id="xcms-find-peaks" destination="dynamic-k8s-large" resources="all"/>
     <tool id="xcms-collect-peaks" destination="dynamic-k8s-medium" resources="all"/>
