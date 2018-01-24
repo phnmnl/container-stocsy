@@ -14,6 +14,7 @@ RUN apt-get update && \
 LABEL software.version="0.1.0"
 LABEL version="0.1.0"
 LABEL software="stocsy"
+LABEL tags="metabolomics"
 ENV TOOL_VERSION=0.1.0
 ENV CONTAINER_VERSION=0.1.0
 ENV TRIGGER_JENKINS=1
